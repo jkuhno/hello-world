@@ -1,0 +1,45 @@
+.columns {
+    background-color: #ccc;
+    margin: 25px;
+    border: solid 1px #777;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+}
+#desktop {
+    background-color: #fff;
+    border: rounded 5px #ddd;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+/*.columns {
+    border: solid 1px #ccc;
+    display: flex;
+}*/
+/*.columns > div {
+    border: solid 1px #ddd;
+    flex: 1;
+}*/
+/*.columns > div:nth-of-type(2) {
+    flex 2;
+}*/
+#desktop, #print {
+    display: none;
+}
+@media print {
+    #mobile, #desktop {
+        display: none;
+    }
+    #print {
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: block;
+    }
+}
